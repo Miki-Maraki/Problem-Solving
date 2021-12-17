@@ -1,4 +1,4 @@
-package ch_7;
+package ch_7SingleArray;
 
 import java.util.Scanner;
 

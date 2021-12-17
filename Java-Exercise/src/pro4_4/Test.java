@@ -7,7 +7,8 @@ public class Test {
 
 		Polygon[] poly = { new Rectangle(3, 4), new Square(3) };
 
-		for (Polygon p : poly) {
+		for (Polygon p : poly) {   // poly array of polygon 
+			
 			System.out.println("For this " + p.getClass().getSimpleName() + " \n perimeter is = " + p.computePerimeter()
 					+ "\n" + "Thank you for using our program!");
 		}

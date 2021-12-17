@@ -1,4 +1,4 @@
-package ch_6;
+package ch_6Methods;
 
 public class Temp {
 	

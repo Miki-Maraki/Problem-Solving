@@ -1,11 +1,13 @@
-package pro4_2;
+package pro6_2Nested;
 
 public class House {
+	
+	
 	public class Bedroom {    // nested class
 
         int bedroom_count = 4;
 
-        void printBedroom() {
+      public  void printBedroom() {
             System.out.println("Number of bedrooms: " + bedroom_count);
         }
     }
