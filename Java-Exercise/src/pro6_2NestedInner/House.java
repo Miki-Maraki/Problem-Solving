@@ -1,4 +1,4 @@
-package pro6_2Nested;
+package pro6_2NestedInner;
 
 public class House {
 	
