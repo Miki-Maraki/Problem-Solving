@@ -1,38 +1,33 @@
 package list;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 public class ExampleList {
-
-	public static void main(String args[]) {
-
-		ArrayList<String> list = new ArrayList<String>();// Creating arraylist
-		list.add("Ravi");// Adding object in arraylist
-		list.add("Vijay");
-		list.add("Ravi");
-		list.add("Ajay");		
-		// Traversing list through Iterator		
-		Iterator<String> itr = list.iterator();
-		while (itr.hasNext()) {
-			System.out.println(itr.next());
+	// Q. if we have 3 list of array, how many times of looping? 2 times n
+	// Q. write a method that return an index 
+		// given sorted array and target number 
+		//int[] sortedList = { 2, 4, 7, 8, 9, 14, 17, 25 };
+		int[] sortedArrayList;
+		int targetNumber;
+		
+		public int findArrayIndex(int[] sortedArrayList, int targetNumber) { // method
+			for (int i = 0; i < sortedArrayList.length; i++) {
+				if (sortedArrayList[i] == targetNumber) {
+					return i;
+				}else if(targetNumber < sortedArrayList[i]) {
+					return i;
+				}
+			}
+			return sortedArrayList.length;
+		}	
+		public static void main(String[] args) {
+			ExampleList ml = new ExampleList();
+			System.out.println(ml.findArrayIndex( new int[] {2, 4, 7, 8, 9, 14, 17, 25}, 7)); // index 2
+			System.out.println(ml.findArrayIndex( new int[] {2, 4, 7, 8, 9, 14, 17, 25}, 15)); // index 6
+			System.out.println(ml.findArrayIndex( new int[] {2, 4, 7, 8, 9, 14, 17, 25}, 30));  // sortedArrayList.length~~~ index 8
+			
+			//System.out.println(findArrayIndex(new int[] {2, 4, 7, 8, 9, 14, 17}, 4));
+			//System.out.println(findArrayIndex(new int[] {2, 4, 7, 8, 9, 14, 17}, 6));
+			//System.out.println(findArrayIndex(new int[] {2, 4, 7, 8, 9, 14, 17}, 20));
 		}
-	}
-}
-/*   public class TestJavaCollection2{  
-           public static void main(String args[]){  
-          
-          LinkedList<String> al = new LinkedList<String>();  
-             al.add("Ravi");  
-			 al.add("Vijay");  
-  			 al.add("Ravi");  
-			 al.add("Ajay"); 
-			  
-		  Iterator<String> itr = al.iterator();  
-  				while(itr.hasNext()){  
-					System.out.println(itr.next());  
-						}  
-	     }  
+
 }  
 
-*/
