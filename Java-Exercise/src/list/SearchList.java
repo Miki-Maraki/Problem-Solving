@@ -1,6 +1,5 @@
 package list;
 
-      //Programming Assignment 8-1
       //check the search method in a sorted arrayList
 public class SearchList {
        int[] anArray; 
@@ -21,9 +20,17 @@ public class SearchList {
 		return recurse(a, mid - 1, val);
 	}
   public static void main(String [] args) {
-	  SearchList s = new SearchList(new int[] {3, 6, 7, 9, 13, 18, 25, 31, 39});
-	  System.out.println( s.search(5)); 
-	  System.out.println( s.search(7)); 
-	  System.out.println( s.search(17)); 
+	  int[] arr = {3, 6, 7, 9, 13, 18, 25, 31, 39};
+	  SearchList sr = new SearchList(arr); 
+	  System.out.println( "Is \"5\" found in the array list : " + sr.search(5)); 
+	  System.out.println( "Is \"7\" found in the array list : " + sr.search(7)); 
+	  System.out.println( "Is \"17\" found in the array list : " + sr.search(17)); 
+	  
+/*	 
+	  SearchList s = new SearchList(new int[] {3, 6, 7, 9, 13, 18, 25, 31, 39});  
+	  System.out.println( "Is \"5\" found in the array list : " + s.search(5));    // false
+	  System.out.println( "Is \"7\" found in the array list : " + s.search(7));     // true
+	  System.out.println( "Is \"17\" found in the array list : " + s.search(17));   // false
+*/
   }
 }
