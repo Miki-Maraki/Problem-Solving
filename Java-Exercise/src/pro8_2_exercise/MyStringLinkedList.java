@@ -1,9 +1,10 @@
-package linked;
+package pro8_2_exercise;
 
-// implement of LinkedList
-public class MyLinkedList {
+// start point
+
+public class MyStringLinkedList {
 	Node header;
-	MyLinkedList(){
+	MyStringLinkedList(){
 		header = new Node(null,null, null);
 	}
 	public void add(String item){
@@ -15,15 +16,14 @@ public class MyLinkedList {
 		
 	}
 	class Node {
-		String data;
+		String value;
 		Node next;
 		Node previous;
-		Node(Node next, Node previous, String data){
+		Node(Node next, Node previous, String value){
 			this.next = next;
 			this.previous = previous;
-			this.data = data;
+			this.value = value;
 		}
 	}
-
 
 }

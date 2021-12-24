@@ -1,20 +1,21 @@
-package pro8_2linkedlist;
+package pro8_2_exercise;
 
-public class MyStringLinkedListDouble {
+import pro8_2_exercise.MyLinkedListExercise.Node;
+
+// my answer to 8-2
+public class MyLinkedListDoubleAnswer {
 	Node header;
-
-	MyStringLinkedListDouble() {
+	
+	MyLinkedListDoubleAnswer(){
 		header = new Node(null, null, null);
-	}
-
-	public void addFirst(String item) {
+	}	
+   public void addFirst(String item) {
 		Node n = new Node(header.next, header, item);
 		if (header.next != null) {
 			header.next.previous = n;
 		}
 		header.next = n;
 	}
-
 	public void addLast(String item) {
 		if (isEmpty())
 			header.next = new Node(null, header, item);
@@ -28,7 +29,6 @@ public class MyStringLinkedListDouble {
 			newNode.previous = temp;
 		}
 	}
-
 	public void insert(String data, int pos) {
 
 		if (pos > sizeOfList() || pos < 0)
@@ -55,7 +55,6 @@ public class MyStringLinkedListDouble {
 			}
 		}
 	}
-
 	public boolean remove(String data) {
 		if (isEmpty())
 			return false;
@@ -88,7 +87,6 @@ public class MyStringLinkedListDouble {
 			swap(temp, temp2);
 		}
 	}
-
 	public Node minNode(Node temp) {
 		Node temp3 = temp;
 		while (temp.next != null) {
@@ -117,7 +115,6 @@ public class MyStringLinkedListDouble {
 		boolean result = recSearch(0, sizeOfList() - 1, header, data);
 		return result;
 	}
-
 	public boolean recSearch(int lower, int uper, Node header1, String data) {
 		int mid = (lower + uper) / 2;
 		int count = 0;
@@ -148,7 +145,6 @@ public class MyStringLinkedListDouble {
 			return true;
 		return false;
 	}
-
 	public int sizeOfList() {
 
 		if (header.next == null)
@@ -161,7 +157,12 @@ public class MyStringLinkedListDouble {
 		}
 		return size;
 	}
-
+	public String toString(){
+		Node next = header.next;
+		String output = next.toString(); 
+		
+		return ("[" + output +"]");
+	}
 	void printNodes() {
 		Node next = header.next;
 		if (next == null)
@@ -171,7 +172,6 @@ public class MyStringLinkedListDouble {
 			System.out.println(s);
 		}
 	}
-
 	class Node {
 		String value;
 		Node next;
@@ -182,7 +182,7 @@ public class MyStringLinkedListDouble {
 			this.previous = previous;
 			this.value = value;
 		}
-
+		
 		@Override
 		public String toString() {
 			if (value == null)
@@ -200,31 +200,31 @@ public class MyStringLinkedListDouble {
 		}
 
 	}
-
 	public static void main(String[] args) {
-		MyStringLinkedListDouble list = new MyStringLinkedListDouble();
-		String[] strArray = { "big", "small", "tall", "short", "round", "square", "enormous", "tiny", "gargantuan",
+		
+	MyLinkedListDoubleAnswer mlla = new MyLinkedListDoubleAnswer();
+     String [] arr = { "big", "small", "tall", "short", "round", "square", "enormous", "tiny", "gargantuan",
 				"lilliputian", "numberless", "none", "vast", "miniscule" };
-		for (int i = 0; i < strArray.length; i++) {
-			list.addLast(strArray[i]);
-		}
-
-		list.addLast("AddLastItem");
-		list.addFirst("AddFirsItem");
-		list.insert("InsertAtPos5", 5);
-
-		System.out.println("Unsorted List:");
-		list.printNodes();
-
-		list.minSort();
-		System.out.println();
-
-		list.printNodes();
-		System.out.println("Sorted List:");
-
-		System.out.println("Search Items On The List:");
-		System.out.println("Is the word 'number' found in the list? " + list.binarySearch("number"));
-		System.out.println("Is the word 'tiny' found in the list? " + list.binarySearch("tiny"));
+   
+     for(int i = 0; i < arr.length; i++) {
+    	 mlla.addLast(arr[i]);	 
+     }
+     mlla.printNodes();
+     mlla.addLast("addLastItem");   
+     System.out.println("add item to last position " + mlla);
+     mlla.addFirst("AddFirstItem");
+     System.out.println("add item to first position " + mlla);
+	mlla.insert("InsertAtPos5", 5);
+	System.out.println("Insert item at \" pos, 5 \" " + mlla);
+	
+	mlla.printNodes();
+	System.out.println("Unsorted List : " + mlla);
+	// sort
+	mlla.minSort();
+	System.out.println("Sorted List : " + mlla);
+	// search
+	System.out.println("Is the word 'number' found in the list? " + mlla.binarySearch("number"));
+	System.out.println("Is the word 'tiny' found in the list? " + mlla.binarySearch("tiny"));
+  
 	}
-
 }

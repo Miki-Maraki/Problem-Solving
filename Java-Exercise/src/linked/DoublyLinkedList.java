@@ -48,7 +48,7 @@ public class DoublyLinkedList {
 		list.add("Bob");
 		list.add("Harry");
 		list.add("Steve");
-		System.out.println(list);
+		System.out.println(list); // Steve, Harry, Bob, 
 	}
 
 }

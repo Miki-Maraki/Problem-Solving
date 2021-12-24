@@ -1,4 +1,4 @@
-package pro8_1List;
+package pro8_1ListAnswer;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ public class MinSort {
 		}
 		
 	}
-	void swap(int i, int j) {
+	private void swap(int i, int j) {
 		String temp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = temp;

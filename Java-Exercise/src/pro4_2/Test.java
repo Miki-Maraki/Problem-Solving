@@ -7,6 +7,7 @@ public class Test {
 		//This is an example of the Open-Closed Principle: a well designed 
 		//OO program is open to extension but closed to modification.      'extends'
 		
+		
 		//compute areas
 		for(ClosedCurve cc : objects) {
 			

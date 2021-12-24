@@ -1,11 +1,11 @@
 package list;
 
-public class MyListMain {
+public class MyListImplement {
 	private final int arraySize = 2;
 	private String[] arr; 
 	private int size;
 	
-	public MyListMain() {
+	public MyListImplement() {
 		arr = new String [arraySize];
 		size = 0;
 	}
@@ -105,7 +105,7 @@ public class MyListMain {
 
 	
 public static void main(String [] args) {
-	MyListMain ml = new MyListMain();
+	MyListImplement ml = new MyListImplement();
 	ml.add("King");
 	ml.add("Dani");
 	ml.add("George");  ///"My arrayList after \"Joel\" inserting : " +

@@ -1,10 +1,9 @@
 package linked;
 
 //build a linkedlist using Node data structure.
-
 public class Node {
 	String data;
-	Node next;
+	public Node next;
 	private Node startNode;
 	
 	public boolean search(String s) {
