@@ -28,8 +28,6 @@ public class Person {
 				&& salary == p.salary;
 	}
 	
-	
-	
 	public String getFirstName() {
 		return firstName;
 	}
