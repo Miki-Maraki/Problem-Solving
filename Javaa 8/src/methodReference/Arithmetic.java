@@ -1,0 +1,41 @@
+package methodReference;
+
+import java.util.function.BiFunction;
+// BiFunction is an interface function
+ // Reference to a Static Method
+// Containing            Class::staticMethodName  
+public class Arithmetic {
+	
+	public static int add(int a, int b){  
+		return a+b;  
+		}  
+	public static float add(int a, float b){  
+		return a+b;  
+		}  
+	public static float add(float a, float b){  
+		return a+b;  
+		}  
+		public static void main(String[] args) { 
+			
+			//use predefined functional interface to refer methods
+		BiFunction<Integer, Integer, Integer>adder1 = Arithmetic::add;  
+		// Integer, Integer, Integer> means accept two integers and return integer
+		BiFunction<Integer, Float, Float>adder2 = Arithmetic::add;      // method reference
+		BiFunction<Float, Float, Float>adder3 = Arithmetic::add;  
+		int result1 = adder1.apply(10, 20);  
+		float result2 = adder2.apply(10, 20.0f);              // apply is a BiFunction method
+		float result3 = adder3.apply(10.0f, 20.0f);
+		
+		System.out.println(result1);  
+		System.out.println(result2);  
+		System.out.println(result3);  
+		
+/*		// when class method is non-static method.... instance method reference
+		BiFunction<Integer, Integer, Integer>adder = new Arithmetic()::add;  
+		int result = adder.apply(10, 20);  
+		System.out.println(result);  
+*/		  
+		}  
+
+}
+

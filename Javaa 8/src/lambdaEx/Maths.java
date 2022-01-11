@@ -2,9 +2,10 @@ package lambdaEx;
 
 //(argument-list) -> {body}  Syntax
 
-@FunctionalInterface
-public interface Maths {
-	 int add(int a, int b);
+  @FunctionalInterface
+  public interface Maths {
+	  
+	 int add(int a, int b); 
 }
 /*
   public class Arithmetic  {
