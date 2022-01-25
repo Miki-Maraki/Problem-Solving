@@ -1,4 +1,4 @@
-package pro6_2NestedInner;
+package pro6_2NestedClassAndInterface;
 
 // nested interface
   public interface Showable {  // main interface class 
@@ -12,10 +12,10 @@ package pro6_2NestedInner;
 	   public void msg() {System.out.println("Hello nested interface");}
 
 	public static void main(String args[]) {
-		Showable.Message message = new TestNestedInterface1();// up casting here
-		message.msg();
+		Showable.Message messg = new TestNestedInterface1(); // up casting here
+		messg.msg();
 	}
-}  // end of 
+}  // end of class
    
    //Can we define a class inside the interface? Yes e.g., as follows
     class Post{             // main class
@@ -30,7 +30,7 @@ package pro6_2NestedInner;
 	  public void msg(){System.out.println("Hello nested interface");}   // method 
 	   
 	  public static void main(String args[]){  
-	   Post.Message message=new TestNestedInterface2();//up casting here  
+	   Post.Message message = new TestNestedInterface2(); //up casting here  
 	   message.msg();  
 	  }  
 	 }  

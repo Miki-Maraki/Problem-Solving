@@ -38,7 +38,7 @@ public class Java8StreamAPI {
 	Predicate<String> p = new Predicate<String>() {    
 			@Override
 			public boolean test(String t) {
-				if(t.startsWith("F")) {
+				if(t.startsWith("B")) {
 					return true;
 				}
 				return false;

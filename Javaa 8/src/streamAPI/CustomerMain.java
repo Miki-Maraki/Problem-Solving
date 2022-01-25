@@ -25,9 +25,13 @@ public static void main(String[] args) {
 		cl.add(new Customer("Abe", 21, 5200));
 		cl.add(new Customer("Dave", 43, 7200));
 		cl.add(new Customer("Azeb", 37, 3800));
-		        // counting list by using stream
+		List<Customer> nameStartWithd= cl.stream().filter(c->c.getName().startsWith("D")).collect(Collectors.toList());
+		    System.out.println(nameStartWithd);
+		List<Customer> nameStartWithdd = cl.stream().filter(c->c.getName().startsWith("D")).distinct().collect(Collectors.toList());
+		    System.out.println(nameStartWithdd);    
+		// counting list by using stream
 		Long noOfElementsList = cl.stream() .collect(Collectors.counting());  
-        System.out.println("Total elements as List : "+noOfElementsList);  // 14 
+        System.out.println("Total elements as List : "+ noOfElementsList);  // 14 
         
  //  List<Integer> sortAge = cl.stream().collect(Collections.sort(sortAge, (p1, p2) -> p1.getAge() - p2.getAge()));
         for (Customer p : cl) {

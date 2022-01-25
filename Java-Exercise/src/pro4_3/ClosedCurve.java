@@ -4,7 +4,8 @@ public abstract class ClosedCurve implements Polygon{
 	
 	ClosedCurve(){		
 	}
-	abstract double computeArea();
+	
+	public abstract double computeArea();
 	
 	public abstract int getNumberOfSides();
 	

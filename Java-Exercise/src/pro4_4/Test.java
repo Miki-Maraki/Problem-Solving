@@ -9,8 +9,8 @@ public class Test {
 
 		for (Polygon p : poly) {   // poly array of polygon 
 			
-			System.out.println("For this " + p.getClass().getSimpleName() + " \n perimeter is = " + p.computePerimeter()
-					+ "\n" + "Thank you for using our program!");
+		System.out.println("For this " + p.getClass().getSimpleName() + " \n perimeter is = " + 
+			            p.computePerimeter() + "\n" + "Thank you for using our program!");
 		}
 	}
 }

@@ -11,14 +11,14 @@ public class Rectangle extends ClosedCurve implements Polygon{
 	}
 	
 	public double computeArea() {
-	return width * length;
+	     return width * length;
 	}
 	
 	public int getNumberOfSides() {
-		return NUMBER_OF_SIDES;
+		 return NUMBER_OF_SIDES;
 	}
 	public double computePerimeter() {
-		return 2*(length + width);
+		 return 2*(length + width);
 	}
 
 }

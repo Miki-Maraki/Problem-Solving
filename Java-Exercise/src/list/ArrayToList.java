@@ -13,10 +13,17 @@ public class ArrayToList {
 		System.out.println("Printing Array: " + Arrays.toString(array)); // Array: [Java, Python, PHP, C++]
 		
 		// Converting Array to List
-		List <String> list = new ArrayList <String> ();
+		List <String> list = new ArrayList <String> (); // option 1
 		for (String lang : array) {
 			list.add(lang);
 		}
-		System.out.println("Printing List: " + list);    // List: [Java, Python, PHP, C++]
+		System.out.println("Printing List: " + list);    // List: Java, Python, PHP, C++
+		
+		List <String> l = new ArrayList <String> ();   // option 2
+		l.add("Java");
+		l.add("Python");
+		l.add("PHP");
+		l.add("C++");
+		System.out.println("the lists are : " + l);
 	}
 }

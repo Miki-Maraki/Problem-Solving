@@ -1,4 +1,4 @@
-package pro6_2NestedInner;
+package pro6_2NestedClassAndInterface;
 
 // It cannot access non-static data members and methods.
 // In the Java API, LinkedList.Node and HashMap.Node are examples of static nested classes.
@@ -12,7 +12,7 @@ public class StaticInner {
 	}
 	public static void main(String args[]) {
 		StaticInner.Inner obj = new StaticInner.Inner(); // create obj bc in order to call/invoke void msg()
-		obj.msg(); // because it has instance method msg().
+		obj.msg();                                       // because it has instance method msg().
 	}
  /*    
 	//static nested class with a static method

@@ -1,4 +1,4 @@
-package pro6_2NestedInner;
+package pro6_2NestedClassAndInterface;
 
 public class Top {       // Top outer class
 	int t = 1;

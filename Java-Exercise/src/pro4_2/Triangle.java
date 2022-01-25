@@ -47,7 +47,7 @@ public class Triangle extends ClosedCurve {
 
 	}
 	public double computeArea() {
-		return (0.5 * base * height);
+		return 0.5 * base * height;
 	}
 	public int getNumberOfSides() {
 		return NUMBER_OF_SIDES;
