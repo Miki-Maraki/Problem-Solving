@@ -1,7 +1,6 @@
 package multithread;
 
-// creating thread
-//By implementing Runnable interface
+//2nd way of Thread creating by using Runnable interface
 
 public class Bicycle implements Runnable {
 	

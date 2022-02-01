@@ -1,6 +1,8 @@
 package multithread;
 
+//1st way of Thread creating by using extending Thread class
 //by extending Thread class and overriding its run() method:
+
 public class Motor extends Thread {
 	
 	  public static void main(String[] args) {

@@ -1,10 +1,10 @@
 package multithread;
 
-public class TestTableSynchronization {
+public class TableTestSynchronization {
 
 	public static void main(String args[]) {
 		
-		Table tb = new Table();// only one object from Table class
+		TableSychronization tb = new TableSychronization();// only one object from Table class
 		MyThread1 myTh1 = new MyThread1(tb);
 		MyThread2 myTh2 = new MyThread2(tb);
 		// first execute  myTH1

@@ -2,9 +2,9 @@ package multithread;
 
 public class MyThread2 extends Thread {
 
-	Table t;
+	TableSychronization t;
 
-	MyThread2(Table t) {
+	MyThread2(TableSychronization t) {
 		this.t = t;
 	}
 

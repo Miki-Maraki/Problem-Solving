@@ -1,7 +1,7 @@
 package multithread;
 
-//creating thread
-//By extending Thread class
+//1st way of Thread creating by using extending Thread class
+
 public class Car extends Thread {
 	
 	public void run() {   // method
