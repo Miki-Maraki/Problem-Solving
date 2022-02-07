@@ -8,7 +8,7 @@ public class LengthVsSize {
 	
 	public static void main(String[] args) {  
 	    //creating array of 10 elements  
-	    int arr[]=new int[10];                    // Array use length()
+	    int arr[] = new int[10];                    // Array use length()
 	    //storing 2 elements  
 	    arr[0]=10;  
 	    arr[1]=12;  

@@ -15,22 +15,20 @@ public class StringReverse {
 		return str; // sedkem
 	}
 	
-	public static void main(String args[]) {
-      
+	public static void main(String args[]) {    
+		// using API methods
 
-		// quick wasy to reverse String in Java - Use StringBuffer
+		// To reverse String in Java - Use StringBuffer reverse() method
 		String word = "HelloWorld";
-		String reverse = new StringBuffer(word).reverse().toString();
-		System.out.printf(" original String : %s , reversed String %s  %n", word, reverse);
-		System.out.println(reverse);
+		StringBuffer sb = new StringBuffer(word); // change string to stringBuffer
+				sb.reverse();
+		System.out.println(sb);  // dlroWolleH
 
-		// another quick to reverse String in Java - use StringBuilder
+		// To reverse String in Java - use StringBuilder reverse() method
 		word = "WakeUp";
-		reverse = new StringBuilder(word).reverse().toString();
-		System.out.printf(" original String : %s , reversed String %s %n", word, reverse);
-		System.out.println(reverse);
-		
-		
+		StringBuilder sbr = new StringBuilder(word); // change string to StringBuilder
+				sbr.reverse();
+		System.out.println(sbr);   // pUekaW
+			
 	}
-
 }

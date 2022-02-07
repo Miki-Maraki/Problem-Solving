@@ -2,6 +2,19 @@ package list;
 
 public class ArrayEvenPosition {
 	
+	int [] ar;       //= new int[] {2,5,7,8,9,12,13,16,19};// sorted array
+	 int num;        // int num = 8, 17, 23
+    public int findIndex(int[] ar, int num) {// method
+    	for(int i = 0; i < ar.length; i ++) {
+    		if(num == ar[i]) {
+    			return i;
+    		}else if (num < ar[i]) {
+    			return i;			
+    		}
+    	}
+    	return ar.length;
+    }
+	
 	public static void main(String[] args) {  
 		  
         //Initialize array  
@@ -12,7 +25,6 @@ public class ArrayEvenPosition {
         //Here, i will start from 1 as first even positioned element is present at position 1.  
         for (int i = 1; i < arr.length; i = i+2) {  
             System.out.println(arr[i]);  
-        }  
-    }  
-
+        } 
+    } 
 }

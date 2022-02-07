@@ -3,11 +3,12 @@ package javaInterview;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
 // How to Remove an Element from Array in Java
-public class RemoveArray {
+public class RemoveDuplicateArray {
 
 	public static void main(String[] args) {
 		// give array
@@ -31,7 +32,7 @@ public class RemoveArray {
 			System.out.println(arr[i]); // 40, 9, 36, 12, 29, 9, 54, 34, 12, 5
 		}
 		// remove duplicate from array
-		Set<Integer> set = new HashSet<Integer>();
+		Set<Integer> set = new LinkedHashSet<Integer>();
 		for (int s : arr) {
 			set.add(s);
 		}

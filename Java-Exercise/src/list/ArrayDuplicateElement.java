@@ -1,5 +1,8 @@
 package list;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class ArrayDuplicateElement {
 
 	public static void main(String[] args) {
@@ -13,9 +16,17 @@ public class ArrayDuplicateElement {
 		for (int i = 0; i < arr.length; i++) {         // loop
 			for (int j = i + 1; j < arr.length; j++) { // iteration
 				if (arr[i] == arr[j])
-					System.out.println(arr[j]);
+					System.out.println(arr[j]); // 2, 3, 8
 			}
 		}
+		// 2nd option using set and compare their length and size()
+		Set<Integer> set = new HashSet<>();
+		for(int s:arr) {  // change array to set
+			set.add(s);
+		}
+		System.out.println(set); // [1, 2, 3, 4, 6, 7, 8]
+		System.out.println("size of set is " + set.size());     // 7
+		System.out.println("lenght of array is " + arr.length); // 10 
 	}
 
 }

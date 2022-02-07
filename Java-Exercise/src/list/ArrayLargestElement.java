@@ -19,12 +19,13 @@ public class ArrayLargestElement {
 }
 /*
    int [] arr = new int [] {25, 11, 33,7, 25, 7, 75, 56};  
-   int min = 0;
+   int min = arr[ 0];
    for(int i =0; i <arr.length; i++){
      if (arr[i] < min)
      min = arr[i];
-     System.out.println(min);
+     
    }
+   System.out.println(min);
    for (int i = arr.length-1; i >0; i--){   //reverse
          System.out.println(arr[i] + ", ");
    }

@@ -1,5 +1,9 @@
 package javaInterview;
-
+/*
+Write a Java program that prints the numbers from 1 to 50. But for multiples of three 
+print "Fizz" instead of the number and for the multiples of five print "Buzz". 
+For numbers which are multiples of both three and five print "FizzBuzz"   
+*/
 public class FizzBuzzTest {
 	
 	public static void main(String args[]){ 
@@ -10,22 +14,7 @@ public class FizzBuzzTest {
 			else System.out.println(i); 
 			} 
 		
-	String s1 = "javatpoint is a very good website";  
-	String replaceString = s1.replace('a','d');//replaces all occurrences of a to e  
-	//System.out.println(replaceString);  
-	//replacing character in this String
-	String word = "Java"; // literal string , save in constant pool 
-	String replaced = word.replace("J", "K"); 
-	System.out.println("Replaced String : " + replaced); // Kava 
 	
-	//replacing substring on String in Java 
-	String str = "Scala is good programming language"; 
-	String replacedd = str.replaceAll("Scala", "Java");  // Java is good programming language
-	System.out.println("String after replace : " + replacedd); 
-	replaced = str.replaceFirst("\\s", "#"); //replacing first space in String with # using regular expression 
-	System.out.println("First space String : " + replaced); 
-	replaced = str.replaceAll("\\s", "#"); //replacing all space in String with # using regular expression 
-	System.out.println("ReplaceAll string : " + replaced);
 	
 	// How to check if a Key Object Exists in HashMap Java? containsKey()
 /*
