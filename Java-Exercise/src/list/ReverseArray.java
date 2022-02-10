@@ -1,9 +1,11 @@
 package list;
 
+import java.lang.reflect.Array;
+
 public class ReverseArray {
 	
 	public static void main(String[] args) {  
-        //Initialize array  
+			//Initialize array  
         int [] arr = new int [] {8, 1, 2, 6, 3, 4, 5};  
         System.out.println("Original array: ");  
         for (int i = 0; i < arr.length; i++) {  

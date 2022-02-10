@@ -16,7 +16,7 @@ public class StringReverse {
 	}
 	
 	public static void main(String args[]) {    
-		// using API methods
+		// using API methods.... using reverse method
 
 		// To reverse String in Java - Use StringBuffer reverse() method
 		String word = "HelloWorld";

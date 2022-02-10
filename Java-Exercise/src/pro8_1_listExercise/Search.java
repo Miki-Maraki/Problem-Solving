@@ -9,7 +9,7 @@ public class Search {
 	}
 	//search a sorted array
 	boolean search(int val) {
-		boolean b = recurse(0,anArray.length-1, val);
+		boolean b = recurse(0, anArray.length-1, val);
 		return b;
 	}
 

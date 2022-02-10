@@ -1,6 +1,6 @@
 package list;
 
-public class ExampleList {
+public class TargetNumber {
 	// Q. if we have 3 list of array, how many times of looping? 2 times n
 	// Q. write a method that find index, return an index 
 		// given sorted array and target number 
@@ -19,7 +19,7 @@ public class ExampleList {
 			return sortedArrayList.length;  
 		}	
 		public static void main(String[] args) {
-			ExampleList ml = new ExampleList();
+			TargetNumber ml = new TargetNumber();
 			System.out.println(ml.findArrayIndex( new int[] {2, 4, 7, 8, 9, 14, 17, 25}, 7)); // get index 2
 			System.out.println(ml.findArrayIndex( new int[] {2, 4, 7, 8, 9, 14, 17, 25}, 15)); //put index 6
 			System.out.println(ml.findArrayIndex( new int[] {2, 4, 7, 8, 9, 14, 17, 25}, 30));  // put at sortedArrayList.length~~~ index 8

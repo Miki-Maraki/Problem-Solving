@@ -1,19 +1,8 @@
 package list;
 
+// print number that are found in the Even position of array
+
 public class ArrayEvenPosition {
-	
-	int [] ar;       //= new int[] {2,5,7,8,9,12,13,16,19};// sorted array
-	 int num;        // int num = 8, 17, 23
-    public int findIndex(int[] ar, int num) {// method
-    	for(int i = 0; i < ar.length; i ++) {
-    		if(num == ar[i]) {
-    			return i;
-    		}else if (num < ar[i]) {
-    			return i;			
-    		}
-    	}
-    	return ar.length;
-    }
 	
 	public static void main(String[] args) {  
 		  

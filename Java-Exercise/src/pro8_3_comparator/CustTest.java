@@ -22,7 +22,7 @@ public class CustTest {
 
 		Customer c1 = new Customer(100, "Nigus", 5000);
 		Customer c2 = new Customer(101, "JJ", 4000);
-		Customer c5 = new Customer(105, "Xavi", 4000);
+		Customer c5 = new Customer(105, "Xavi", 4500);
 		Customer c3 = new Customer(102, "Mike", 6000);
 		Customer c4 = new Customer(103, "Abe", 4000);
 

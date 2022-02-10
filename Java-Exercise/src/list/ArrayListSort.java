@@ -11,6 +11,7 @@ public class ArrayListSort {
 	    cars.add("BMW");
 	    cars.add("Ford");
 	    cars.add("Mazda");
+	    cars.add("Bbbbb");
 	    Collections.sort(cars);  // Sort cars
 	    for (String i : cars) {
 	      System.out.println(i);

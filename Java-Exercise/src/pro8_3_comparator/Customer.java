@@ -2,7 +2,7 @@ package pro8_3_comparator;
 
 import java.util.Comparator;
 // A comparator interface is used to order the objects of user-defined classes. 
-//  A comparator object is capable of comparing two objects of the same class.
+// A comparator object is capable of comparing two objects of the same class.
 
 public class Customer implements Comparator<Customer>{
 	private int id;

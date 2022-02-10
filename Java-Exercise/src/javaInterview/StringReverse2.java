@@ -10,7 +10,7 @@ public class StringReverse2 {
 	public static void main(String [] args) {
 	String st = "GeeksForGeeks";           // literal string
 	    
-  //String class does not have reverse() method, StringBuilder class has built in reverse() method. 
+  //String class does not have reverse() method, SBuffer and SBuilder class has built in reverse() method. 
   //StringBuilder class do not have toCharArray() method, String class does have toCharArray() method.
   //SBuffer and Collections also have reverse() method
 	System.out.println("option 1 by using the String toCharArray() method");

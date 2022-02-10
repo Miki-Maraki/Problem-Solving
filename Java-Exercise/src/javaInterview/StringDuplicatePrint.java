@@ -6,7 +6,8 @@ public class StringDuplicatePrint {
 
 	public static void main(String[] args) {
 		String str = "welcome to the java programming language";
-
+        
+		// change String to char to find/print duplicate array
 		char[] ca = str.toCharArray();
 		System.out.print(ca); //welcome to the java programming language
 		
