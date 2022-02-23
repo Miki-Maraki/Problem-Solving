@@ -25,7 +25,7 @@ public class Arithmetic {
 		System.out.println("sum of two numbers " + m.add(3,4));  // provide implement 
 		
         // Multiple parameters with data type in lambda expression  
-        Maths m1=(int a,int b)->(a+b);  
+        Maths m1=(int a, int b)->(a+b);  
         System.out.println("sum of two numbers " + m1.add(10,20));      
         // Lambda expression with return keyword.    
         Maths m2 = (int a,int b)->{  
@@ -38,11 +38,11 @@ public class Arithmetic {
         list.add("ankit");  
         list.add("mayank");  
         list.add("irfan");  
-        list.add("jai");    
-        list.forEach(  
-            (n)->System.out.println(n)  // print all list    .... option 1
-        );  
-        for (String ls:list) {         // by using enhanced for loop .... option 2
+        list.add("jai"); 
+        
+        list.forEach(n->System.out.println(n));  // print all list using lambda .... option 1
+
+        for (String ls:list) {                  // by using forEach loop ...        option 2
         	System.out.println(ls);
         }
         String[] stringArray1 = { "Barbara", "James", "Mary", "John", "Patricia", "Robert", "Michael", "Linda" }; 
@@ -62,7 +62,7 @@ public class Arithmetic {
                                   sum += i;
                          System.out.println("Sum of integers: " + sum);
              List<Integer> integersList2 = new ArrayList<Integer>(Arrays.asList(intArray)); 
-                         integersList2.stream().reduce(Integer::sum).get();
+                         integersList2.stream().reduce(Integer::sum).get(); // method reference
              System.out.println("Sum of integers: " + integersList2.stream().reduce(Integer::sum).get()); // option 2
 	}
 }

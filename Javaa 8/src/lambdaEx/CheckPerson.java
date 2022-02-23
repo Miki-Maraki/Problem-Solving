@@ -21,12 +21,8 @@ public static void printPersonsWithPredicate(
         }
     }
 }
-printPersonsWithPredicate(
-    roster,
-    p -> p.getGender() == Person.Sex.MALE
-        && p.getAge() >= 18
-        && p.getAge() <= 25
-);
+printPersonsWithPredicate( roster, p -> p.getGender() == Person.Sex.MALE
+        && p.getAge() >= 18 && p.getAge() <= 25 );
 
 public static void printPersonsWithPredicate(
     List<Person> roster, Predicate<Person> tester) {

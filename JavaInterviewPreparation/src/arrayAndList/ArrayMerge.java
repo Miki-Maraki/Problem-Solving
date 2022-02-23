@@ -31,7 +31,8 @@ public class ArrayMerge {
 	public static void main(String[] args) {
 		
 		merge(arr1.length, arr2.length);
-		System.out.print("After Merging First Array: ");
+		System.out.println("    After Merging");
+		System.out.print("First Array: ");
 		
 		System.out.println(Arrays.toString(arr1));
 		System.out.print("Second Array:  ");

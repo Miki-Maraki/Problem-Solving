@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-// 3 types of for loop: for loop, enhanced for loop, forEach
+// 2 types of for loop: for loop, enhanced for loop
 public class Java8StreamAPI {
 
 	public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class Java8StreamAPI {
 				System.out.print( s + ", " ); // to print all list
 		}
 		for (String st : l) {      
-			if (st.equals("Bob")) {            // to print/to check if Bob there
+			if (st.equals("Bob")) {            // to print/to check if Bob is there
 				System.out.println("\nYes, " + st + " is found");
 			}
 		}		

@@ -1,6 +1,6 @@
-package streamAPI;
+package polymorsim;
 
-public class JavaInterview {
+public class AbstractInterface {
 
 /*	
 	s1 == s2 compare location

@@ -21,7 +21,7 @@ public class Customer {
 	public String toString() {
 		return "Name = " + name + " , Age =" + age + " , Salary= " + salary;
 	}
-/*	Do methods:Intermediate stream and terminate stream
+/*	Activities to do:Intermediate stream and terminate stream
     doing methods:	Distinct, filter, forEach, accept, test, sort, limit
 	filter age>= 30, filter start "D", collect salary < 5000 by name , collect start "M", count salary = 5200, print	
 */

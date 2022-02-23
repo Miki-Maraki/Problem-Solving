@@ -10,8 +10,9 @@ public interface Functional {
 	BiConsumer<T,U>              void accept(T t, U u)
 	
 	interface Predicate<T> {
-    boolean test(T t);
-}
+     boolean test(T t);
+    }
+    
     interface Predicate<Person> {  T represent className
     boolean test(Person t);
 }
