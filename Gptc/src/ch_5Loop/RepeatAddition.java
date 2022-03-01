@@ -9,14 +9,14 @@ public class RepeatAddition {
 	    int number2 = (int)(Math.random() * 10);
 
 	    // Create a Scanner
-	    Scanner input = new Scanner(System.in);
+	    Scanner scan = new Scanner(System.in);
 
 	    System.out.print( "What is " + number1 + " + " + number2 + "? ");
-	    int answer = input.nextInt();
+	    int answer = scan.nextInt();
 	    
 	    while (number1 + number2 != answer) {
 	      System.out.print("Wrong answer. Try again. What is " + number1 + " + " + number2 + "? ");
-	      answer = input.nextInt();
+	      answer = scan.nextInt();
 	    }
 
 	    System.out.println("You got it!");

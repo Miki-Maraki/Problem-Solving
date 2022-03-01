@@ -23,7 +23,7 @@ public class EmployeeMain {
 		ls.add(emp5);
 		ls.add(emp4);
 		ls.add(emp3);
-		System.out.println(ls);
+		//System.out.println(ls);
 		
 		List<Double> salgrthan5000 = ls.stream().filter(s->s.getSalary() > 5000).map(s->s.getSalary()).collect(Collectors.toList());
 		System.out.println("salary > 5000 " + salgrthan5000);	
@@ -32,6 +32,12 @@ public class EmployeeMain {
 		
 		long salgrthan5000Count = ls.stream().filter(s->s.getSalary() > 5000).count();
 		System.out.println(salgrthan5000Count);
+		
+		List<Employee> dstnctSala = ls.stream().filter(s-> s.getSalary() > 4500) .distinct().collect(Collectors.toList());
+		System.out.println("distinct salary > 4500 :" + dstnctSala);
+		
+		//List<Employee> dstnctName = ls.stream().filter(s-> s.getName()).distinct().collect(Collectors.toList());
+		//System.out.println(dstnctName);
 		
 		List<Employee> startWithB = ls.stream().filter(n->n.getName().startsWith("B")).collect(Collectors.toList());
 		System.out.println("name start with B " + startWithB);

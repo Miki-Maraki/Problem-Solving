@@ -18,80 +18,63 @@ public class UserInteraction {
         System.out.println("3. Calculate the average grade");
         System.out.println("4. Exit program");
 
-        choice = scan.nextInt();
+        choice = scan.nextInt();  // int x; ---> x = 2y *h;
 
-        if ( choice == 1 ) 
-        {
+        if ( choice == 1 ) {
             Scanner scansubjects = new Scanner(System.in);
             Scanner scangrades = new Scanner(System.in);
 
             System.out.println("Enter 10 subjects and their corresponding grades:");
             System.out.println();
-
             int i = 0;
 
-            for( i = 0; i < 10; i++ )
-            {
+            for( i = 0; i < 10; i++ ) {
                 System.out.println("Subject:");
 
                 String temp = scansubjects.nextLine();
                 subjects[i] = temp.toLowerCase();
-
                 System.out.println("Grade:");
-
                 grades[i] = scangrades.nextInt();
 
-                if( i == ( subjects.length - 1 ) )
-                {
+                if( i == ( subjects.length - 1 ) ) {
                     System.out.println("Thank you!");
                     System.out.println();
                 }
             }
         }
-
-
-        if ( choice == 2 )
-        {
+        if ( choice == 2 ) {
             System.out.println("Subjects" + "\tGrades");
             System.out.println("---------------------");
 
-            for(int p = 0; p < subjects.length; p++)
-            {
-
+            for(int p = 0; p < subjects.length; p++) {
                 System.out.println(subjects[p] + "\t" + "\t" + grades[p]);
             }
         }
 
-        if ( choice == 3 )
-        {   
+        if ( choice == 3 ) {   
               System.out.println("Total of grades: " + getSum(grades));
               System.out.println("Count of grades: " + grades.length);
               System.out.println("Average of grades: " + getAverage(grades));
               System.out.println();
         }
 
-
     } while ( choice != 4);
-
-
 }
 
-    public static double getAverage(int[] array)
-    {
+    public static double getAverage(int[] array) {
         int sum = 0;
-        for(int i : array) sum += i;
+        for(int i : array) {
+        	sum += i; // sum = sum + i
+        }
         return ((double) sum)/array.length;
     }
 
-    public static double getSum(int[] array)
-    {
+    public static double getSum(int[] array) {
         int sum = 0;
-        for (int i : array) 
-        {
-         sum += i;
+        for (int i : array) {
+         sum += i;  // sum = sum + i
         }
         return sum;
     }
-
 
 }

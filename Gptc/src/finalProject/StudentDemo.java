@@ -7,7 +7,7 @@ public class StudentDemo {
 
 		// create a menu interface for the student... #3
 		Scanner input = new Scanner(System.in);
-		Student[] students = new Student[20];
+		Student[] stud = new Student[20]; // creating student object
 		int count = 0;
 		char option;
 		String sname;
@@ -27,18 +27,18 @@ public class StudentDemo {
 			option = input.next().charAt(0);
 
 			switch (option) {
-			case 'a':
+			case 'a':  // A. Add new student
 				System.out.print("\nEnter the name of a student: ");
 				sname = input.next();
 
 				System.out.print("Enter the id of the student: ");
 				sid = input.nextInt();
 
-				students[count] = new Student(sname, sid);
+				stud[count] = new Student(sname, sid);
 				count++;
 				break;
 
-			case 'b':
+			case 'b':    // B.Enter test grades
 				if (count == 0) {
 					System.out.println("No students are in the list.");
 					break;
@@ -50,21 +50,21 @@ public class StudentDemo {
 				if (index < 0 || index < count) {
 					System.out.print("Enter grade 1 out of 100: ");
 					grade = input.nextInt();
-					students[index].setGrade(0, grade);
+					stud[index].setGrade(0, grade);
 
 					System.out.print("Enter grade 2 out of 100: ");
 					grade = input.nextInt();
-					students[index].setGrade(1, grade);
+					stud[index].setGrade(1, grade);
 
 					System.out.print("Enter grade 3 out of 100: ");
 					grade = input.nextInt();
-					students[index].setGrade(2, grade);
+					stud[index].setGrade(2, grade);
 				} else {
 					System.out.println("Invalid index! The index should be >=0 and <" + count);
 				}
 				break;
 
-			case 'c':
+			case 'c':   // C.Display all students
 				System.out.println("\nDetails of all students:");
 
 				if (count == 0) {
@@ -74,18 +74,18 @@ public class StudentDemo {
 
 				for (int i = 0; i < count; i++) {
 					System.out.println("\nStudent #" + (i + 1));
-					System.out.println("Name: " + students[i].getName());
-					System.out.println("ID:   " + students[i].getID());
-					System.out.println("Grade1: " + students[i].getGrade(0));
-					System.out.println("Grade2: " + students[i].getGrade(1));
-					System.out.println("Grade3: " + students[i].getGrade(2));
-					System.out.println("Average grade: " + students[i].getAverage());
-					System.out.println("Letter grade: " + students[i].getLetterGrade());
+					System.out.println("Name: " + stud[i].getName());
+					System.out.println("ID:   " + stud[i].getID());
+					System.out.println("Grade1: " + stud[i].getGrade(0));
+					System.out.println("Grade2: " + stud[i].getGrade(1));
+					System.out.println("Grade3: " + stud[i].getGrade(2));
+					System.out.println("Average grade: " + stud[i].getAverage());
+					System.out.println("Letter grade: " + stud[i].getLetterGrade());
 				}
 
 				break;
 
-			case 'd':
+			case 'd':  // D. Exit the program
 				System.out.println("Thank you.");
 				break;
 

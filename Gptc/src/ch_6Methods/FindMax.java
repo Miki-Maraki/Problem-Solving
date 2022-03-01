@@ -1,26 +1,22 @@
 package ch_6Methods;
 
+// White a method that return maximum between two numbers 
 public class FindMax {
-	
-	/** Main method */
-	  public static void main(String[] args) {
-	    int i = 5;
-	    int j = 2;
-	    int k = max(i, j); // Invoke max method
-	    System.out.println("The maximum between " + i +
-	      " and " + j + " is " + k);
-	  }
 
-	  /** Return the max between two numbers */
-	  public static int max(int num1, int num2) {
-	    int result;
+	public int maxNum(int num1, int num2) { // method
+		int result;
+		if (num1 > num2)
+			result = num1;
+		else
+			result = num2;
+		return result; // Return result
+	}
 
-	    if (num1 > num2)
-	      result = num1;
-	    else
-	      result = num2;
-
-	    return result; // Return result
-	  }
-
+	public static void main(String[] args) {
+		FindMax fm = new FindMax();
+		int i = 55;
+		int j = 42;
+		int k = fm.maxNum(i, j); // Invoke max method
+		System.out.println("The maximum between " + i + " and " + j + " is : " + k);
+	}
 }

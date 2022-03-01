@@ -15,7 +15,7 @@ public class Student { // Create the student class
 		grades[2] = -1;
 	}
 
-	// Create a student functions
+	// Create a student functions/methods
 	public String getName() {
 		return name;
 	}
@@ -36,7 +36,7 @@ public class Student { // Create the student class
 		return (grades[0] + grades[1] + grades[2]) / 3.0;
 	}
 
-	public char getLetterGrade() {
+	public char getLetterGrade() {     // a method with char return type 
 		double avgGrd = getAverage();
 		if (avgGrd >= 90)
 			return 'A';

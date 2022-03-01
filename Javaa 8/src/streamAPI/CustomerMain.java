@@ -24,11 +24,12 @@ public static void main(String[] args) {
 		cl.add(new Customer("David", 27, 4000));
 		cl.add(new Customer("Abe", 21, 5200));
 		cl.add(new Customer("Dave", 43, 7200));
-		cl.add(new Customer("Azeb", 37, 3800));
+		cl.add(new Customer("Michael", 37, 3800));
+		cl.add(new Customer("Michael", 32, 4300));
 		List<Customer> nameStartWithd= cl.stream().filter(c->c.getName().startsWith("D")).collect(Collectors.toList());
-		    System.out.println(nameStartWithd);
+		    System.out.println("start with D " + nameStartWithd);
 		List<Customer> nameStartWithdd = cl.stream().filter(c->c.getName().startsWith("D")).distinct().collect(Collectors.toList());
-		    System.out.println(nameStartWithdd);    
+		    System.out.println("start with D distinct" + nameStartWithdd);    
 		// counting list by using stream
 		Long noOfElementsList = cl.stream() .collect(Collectors.counting());  
         System.out.println("Total elements as List : "+ noOfElementsList);  // 14 
@@ -134,7 +135,7 @@ public static void main(String[] args) {
 		
 		// filter using stream
 		List<Integer> custAge = cl.stream().filter(c->c.age > 29).map(c->c.age).collect(Collectors.toList());
-		System.out.println(custAge);
+		System.out.println("age > 29: " + custAge);
 
         	// filter using stream
 		List<String> custName = new ArrayList<>();
@@ -144,16 +145,18 @@ public static void main(String[] args) {
 			}
         }
 	    //	cl.stream().filter(n-> n.startsWith("B")).forEach(name->System.out.print(name+", "));
-		custName.stream().filter(c-> c.startsWith("M")).collect(Collectors.toList());                     // ???
-		System.out.println("Names start with M : " + custName);
-		custName.stream().filter(n-> n.startsWith("M")).distinct().collect(Collectors.toList());          // ???
-		System.out.println("Names start with M, with no repeat : " + custName);
+		List<Customer> name = cl.stream().filter(c->c.name.startsWith("M")).collect(Collectors.toList());                     // ???
+		System.out.println("Names start with M : " + name);    // right
+		List<Customer> nameDstnct = cl.stream().filter(n-> n.name.startsWith("M")).distinct().collect(Collectors.toList());          // ???
+		System.out.println("Names start with M, with no repeat : " + nameDstnct);
 		
 		
 		
 /*		 for (Customer cr : cl) {      
 				if (cr.equals("Dani")) {            // 
 					System.out.println("Dani : " + cr);
+					
+					
 					break;
 				}
 	        }
