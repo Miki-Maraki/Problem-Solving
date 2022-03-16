@@ -1,7 +1,7 @@
 package spring;
 
 // What are the types of Spring MVC Dependency Injection?
-//Construction-Based and setter-based
+//Constructor-Based and setter-based
 
 public class DepInjection {
 	

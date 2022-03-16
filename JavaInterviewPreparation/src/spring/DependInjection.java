@@ -1,11 +1,11 @@
 package spring;
 
 // What are the types of Spring MVC Dependency Injection?
-// Construction-Based and setter-based
+// Constructor-Based and setter-based
 
 public class DependInjection {
 	
-	/*
+	/* 
  @Configuration
 @ComponentScan("com.interviewbit.constructordi")
 public class SpringAppConfig {
@@ -20,6 +20,7 @@ public class SpringAppConfig {
 }
 	 */
  /*  
+  * ...at  Constructor-Based
 	@Component
 	public class Figure {
 	   private Shape shape;

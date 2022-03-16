@@ -1,6 +1,6 @@
 package multithread;
 
-//1st way of Thread creating by using extending Thread class
+//1st way of Thread creating by using extending (object class)Thread class
 
 public class Car extends Thread {
 	
@@ -8,7 +8,7 @@ public class Car extends Thread {
 		System.out.println("thread is running...");
 	}
 
-	public static void main(String args[]) {
+	public static void main(String [] args) {
 		Car t1 = new Car();
 		t1.start();   // calling the method start() that found in Thread interface
 	}

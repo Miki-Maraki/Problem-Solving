@@ -1,15 +1,12 @@
 package javaInterview;
 
-
-// Find The Duplicate Number in Array
+// Find the duplicate Elements in Array
 public class FindDuplicateElements {
 	
-	 private static int findDup(int nums[]) {  // method
-	        int n = nums.length;
-	        
-	        for (int i = 0; i < n; i++) {
+	 private static int findDup(int nums[]) {  // method        
+	        for (int i = 0; i < nums.length; i++) {
 	            // For every element check if it is repeated in the elements ahead of it
-	            for (int j = i + 1; j < n; j++) {
+	            for (int j = i + 1; j < nums.length; j++) {
 	                // If repeated, this is the duplicate element
 	                if (nums[j] == nums[i])
 	                    return nums[i];       // print duplicate element
@@ -21,8 +18,8 @@ public class FindDuplicateElements {
 	 
 	    public static void main(String[] args) {
 	        // Example 1
-	        int nums[] = new int[]{9, 1, 3, 4, 6, 6,};
-	        System.out.println(findDup(nums));     // 6
+	        int nums[] = new int[]{9, 1, 3, 4, 6, 8};
+	        System.out.println(findDup(nums));     // -1 no duplicate 
 	        // Example 2
 	        nums = new int[]{3, 1, 3, 4, 2, 7};
 	        System.out.println(findDup(nums));     // 3
@@ -31,7 +28,7 @@ public class FindDuplicateElements {
   
  private static void findDuplicates(int[] ar) {  
   
-    Set<Integer> uniqueElements = new HashSet<>();
+    Set<Integer> uniqueElements = new HashSet<Integer>();
          
     Set<Integer> duplicateElements =  Arrays.stream(ar).filter(i -> !uniqueElements.add(i))
                                             .boxed().collect(Collectors.toSet());

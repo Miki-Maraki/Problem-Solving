@@ -14,8 +14,26 @@ public class ArrayLargestElement {
            if(arr[i] > max)  // Initially max is 25 then iterate
                max = arr[i];  
         }  
-        System.out.println("Largest element present in given array: " + max);  
-    }  
+        System.out.println("Largest element present in given array: " + max);
+        
+     // write method to Find the largest number in array
+        int a[] = { 11, 10, 4, 15, 16, 13, 2 };
+        System.out.println("Largest: " + getLargest(a)); // 16
+    } 
+	// write method to Find the largest number in array
+	public static int getLargest(int[] a) {
+	      int temp;
+	      for (int i = 0; i < a.length; i++) {
+	         for (int j = i + 1; j < a.length; j++) {
+	            if (a[i] > a[j]) {
+	               temp = a[i];
+	               a[i] = a[j];
+	               a[j] = temp;
+	            }
+	         }
+	      }
+	      return a[a.length - 1]; // return largest element
+	   }
 }
 /*
    int [] arr = new int [] {25, 11, 33,7, 25, 7, 75, 56};  

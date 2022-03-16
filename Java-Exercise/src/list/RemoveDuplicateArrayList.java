@@ -12,25 +12,25 @@ import java.util.Set;
 public class RemoveDuplicateArrayList {
 	
 	 public static void main(String[] args) {  
-	        List<String> l = new ArrayList<String>();  
-	        l.add("Mango");  
-	        l.add("Banana");  
-	        l.add("Mango");
-	        l.add("Pomegranate");
-	        l.add("Apple");
-	        l.add("Pineapple");
-	        System.out.println(l.toString()); // print array list
+	        List<String> list = new ArrayList<String>();  
+	        list.add("Mango");  
+	        list.add("Banana");  
+	        list.add("Mango");
+	        list.add("Pomegranate");
+	        list.add("Apple");
+	        list.add("Pineapple");
+	        System.out.println(list.toString()); // print array list
 	        
 	        // change ArrayList to Set
-	        Set<String> s = new LinkedHashSet<String>(l); // option 1
-	        System.out.println("set is " + s);  
+	        Set<String> s = new LinkedHashSet<String>(list); // option 1
+	        System.out.println("Set is " + s);  
 	        
 	        // using for each loop
 	        Set<String> set = new HashSet<String>();      // option 2
-	        for(String str:l) {
+	        for(String str:list) {
 	        	set.add(str); 
 	        }
-	        System.out.println("set through for each loop " + set);
+	        System.out.println("Set through for each loop " + set);
 	    }  
 
 }

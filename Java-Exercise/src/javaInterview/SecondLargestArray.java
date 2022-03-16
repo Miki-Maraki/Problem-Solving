@@ -23,7 +23,7 @@ public class SecondLargestArray {
 				}                               
 			}
 		}
-		System.out.println(arr[arr.length-1]);  // largest 63
+		System.out.println(arr[arr.length-1]);  //     largest 63
 		System.out.println(arr[arr.length-2]);  // 2nd largest 54
 		System.out.println(arr[arr.length-3]);  // 3rd largest 49
 		System.out.println(arr[arr.length-4]);  // 4th largest 44

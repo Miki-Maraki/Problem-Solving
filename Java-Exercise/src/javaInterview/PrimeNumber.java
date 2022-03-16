@@ -10,7 +10,7 @@ public class PrimeNumber {
 	      System.out.println("Enter the number till which prime number to be printed: ");
 	      int limit = new Scanner(System.in).nextInt();
 	   
-	      //printing primer numbers till the limit ( 1 to 100)
+	      //printing prime numbers till the limit ( 1 to 100)
 	      System.out.println("Printing prime number from 1 to " + limit);
 	      for(int number = 2; number <= limit; number++){
 	          //print prime numbers only
@@ -21,7 +21,7 @@ public class PrimeNumber {
 	      
 	      PrimeNumber pm = new PrimeNumber();
 		    boolean n = pm.isPrime(1);
-		    System.out.println(n);     // false
+		    System.out.println("1 is prime : " + n);     // false
 		    System.out.println(pm.isPrime(17));//true
 	    }
 
@@ -34,7 +34,7 @@ public class PrimeNumber {
 	               return false; //number is divisible so its not prime
 	           }
 	        }
-	        return true; //number is prime now
+	        return true; //means number is prime now
 	    }
 
 }

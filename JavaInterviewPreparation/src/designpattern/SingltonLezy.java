@@ -1,11 +1,11 @@
 package designpattern;
 
+//Singleton Lezy Initialization
 public class SingltonLezy {
 
 	private static SingltonLezy INSTANCE;
 
-	private SingltonLezy() {
-
+	private SingltonLezy() {  // Constructor
 	}
 
 	public static SingltonLezy getInstance() {

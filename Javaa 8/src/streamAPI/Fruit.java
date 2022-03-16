@@ -15,11 +15,10 @@ public class Fruit {
 		
 		List<String> fl1 = new ArrayList<String>(); // method 1
 		Collections.addAll(fl1, arr);
-		//System.out.println(fl1);
+		System.out.println("fruit list is : " + fl1);
 		
 		List<String> fl2 = Arrays.asList(arr);      // method 2
-		//System.out.println(fl2);
-		
+		System.out.println("List fruit : " + fl2);
 		
 		List<String> fl3 = new ArrayList<String>(); // method 3
 		for(String fruit:arr) {
@@ -28,12 +27,16 @@ public class Fruit {
 	   //System.out.println(fl3);
 		
 	   long unique = fl2.stream().distinct().count();
-	   System.out.println(unique); // 6
+	   System.out.println(unique); // 7
 	     
 	   List<String> unq = fl2.stream().filter(n->n.startsWith("b")).collect(Collectors.toList());
 	   System.out.println(unq);
 	   
 	   List<String> uniq = fl2.stream().filter(n->n.startsWith("b")).distinct().collect(Collectors.toList());
-	   System.out.println(uniq);
+	   System.out.println(uniq);  // no repeat
+     } 
 }
-}
+
+
+
+

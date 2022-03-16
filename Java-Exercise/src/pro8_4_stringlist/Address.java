@@ -65,8 +65,7 @@ public class Address {
 		List<String> addressList = new ArrayList<>();
 		List<String> addressList2 = new ArrayList<>();
 		addressList = asList();
-		addressList.forEach(
-				address -> addressList2.add(address.toUpperCase()));
+		addressList.forEach(address -> addressList2.add(address.toUpperCase()));
 				
 		return addressList2;
 	}

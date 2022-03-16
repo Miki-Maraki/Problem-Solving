@@ -72,7 +72,7 @@ public class Product {
 
 		// Filtering and Iterating Collection data
 		prLt.stream().filter(p->p.price == 30000).forEach(p-> System.out.println("Name of the product is : " + p.name));
-		prLt.stream() .filter(n-> n.id == 5) .forEach(n -> System.out.println("Name of product is : " + n.name));
+		prLt.stream().filter(n->n.id == 5) .forEach(n -> System.out.println("Name of product is : " + n.name));
 
 		// stream: using reduce() Method in Collection
 		Float totalPrice = prLt.stream().map(product -> product.price).reduce(0.0f, (sum, price) -> sum + price); 

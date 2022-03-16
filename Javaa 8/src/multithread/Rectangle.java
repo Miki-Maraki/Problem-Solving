@@ -12,18 +12,18 @@ import java.io.Serializable;
 //for deserialization we call the readObject() method of ObjectInputStream class.
 public class Rectangle implements Serializable{
 	
-	public Rectangle(int length, int breadth) {
+	int length;
+    int breadth;
+    int area; 
+	public Rectangle(int length, int breadth) { // method
 		this.length = length;
 		this.breadth = breadth;
 		area = length * breadth;
     }
-       int length;
-       int breadth;
-       int area; // transient int area;     Transient variables are not serialized. 
-       //If you don't want to serialize any data member of a class, you can mark it as transient.
        
-       
-    //How	do	you	serialize	an	object	using	Serializable	interface?
+       // transient int area;     Transient variables are not serialized. 
+       //If you don't want to serialize any data member of a class, you can mark it as transient. 
+       //How	do	you	serialize	an	object	using	Serializable	interface?
 /*
      FileOutputStream	fileStream = new FileOutputStream("Rectangle.ser");
      ObjectOutputStream	objectStream	=	new ObjectOutputStream(fileStream);
@@ -31,15 +31,15 @@ public class Rectangle implements Serializable{
      fileStream.close();
      objectStream.close();
 
-     //How do you de-serialize in	Java?
+     //How do you de-serialize in Java?
      FileInputStream  fileInputStream = new FileInputStream("Rectangle.ser");
      ObjectInputStream  objectInputStream = new ObjectInputStream(fileInputStream);
      Rectangle rectangle = (Rectangle)objectInputStream.readObject();
      fileInputStream.close();
      objectInputStream.close();
-      System.out.println(rectangle.length);//	5
-      System.out.println(rectangle.breadth);//	6
-      System.out.println(rectangle.area);//	3
+     System.out.println(rectangle.length);//	5
+     System.out.println(rectangle.breadth);//	6
+     System.out.println(rectangle.area);//	3
 */
       // Transient variables are not serialized. (transient int area;)
 }

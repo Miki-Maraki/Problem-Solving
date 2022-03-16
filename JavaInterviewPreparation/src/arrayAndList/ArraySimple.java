@@ -14,9 +14,9 @@ public class ArraySimple {
 			System.out.println(" print the value of ar [" + i + "]");
 			ar[i] = sc.nextInt();
 		}
-		for(int i = 0; i < ar.length; i++) {
-			System.out.println(" the value of ar[" + i + "] is " + ar[i]);
-		}
+//		for(int i = 0; i < ar.length; i++) {
+//			System.out.println(" the value of ar[" + i + "] is " + ar[i]);
+//		}
 	}
 
 }

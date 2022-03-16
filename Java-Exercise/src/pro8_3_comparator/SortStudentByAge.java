@@ -10,7 +10,9 @@ public class SortStudentByAge implements Comparator<Student> {
 	// provide implemented method
 	// sorting by using age
 	public int compare(Student s1, Student s2) {
-		if (s1.getAge() < s2.getAge()) {
+		return s1.getAge() - s2.getAge();
+	}
+/*  OR  if (s1.getAge() < s2.getAge()) {
 			return -1;
 		} else if (s1.getAge() > s2.getAge()) {
 			return 1;
@@ -19,23 +21,23 @@ public class SortStudentByAge implements Comparator<Student> {
 		}
 		return 0;
 	}
-
+*/
 	public static void main(String[] args) {
 		List<Student> lst = new ArrayList<Student>();
 
-		// Student st = new Student();
+		// Student st = new Student(); 
 		Student stud1 = new Student("John", 37, 303);
 		Student stud2 = new Student("abe", 36, 307);
 		Student stud3 = new Student("Xavi", 35, 301);
 		Student stud4 = new Student("Dani", 29, 304);
 		Student stud5 = new Student("Bob", 35, 306);
 
-		//Student [] stud = { new Student("mk", 34), new Student("abe", 29), new Student("Xavi", 35), new Student("Dani", 36)};
-/*				List<Student> lst = new ArrayList<>();
-				for(int i = 0; i<stud.length; i++) {
-					lst.add(stud[i]);
+		Student [] stud = { new Student("mk", 34, 304), new Student("abe", 29, 301), new Student("Xavi", 35, 306), new Student("Dani", 36, 307)};
+				List<Student> lssst = new ArrayList<>();
+				for(int i = 0; i < stud.length; i++) {
+					lssst.add(stud[i]);
 				}
-*/				
+		System.out.println("list of stud : "+ lssst);
 		lst.add(stud1); // OR by adding individual 
 		lst.add(stud2);
 		lst.add(stud3);

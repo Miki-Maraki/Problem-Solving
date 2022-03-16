@@ -4,9 +4,9 @@ public class LeapYear {
 
 	public static boolean findLeapYear(int year) {
 		if (year % 4 == 0) {
-			return true;
+			return true; // System.out.println("Leap Year");
 		} else
-			return false;
+			return false;//// System.out.println("Not a Leap Year");
 	}
 
 	public static void main(String[] args) {

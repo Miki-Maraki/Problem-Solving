@@ -4,11 +4,11 @@ public class StringReplace {
 	
 	public static void main(String args[]) {
 	String text = "Lorem Ipsum is simply dummy text";
-	String substring = text.substring(3);
+	String substring = text.substring(3); // start from index 3
 	System.out.println(substring);              //em Ipsum is simply dummy text
 	
 	String s1 = "javatpoint is a very good website";  
-	String replaceString = s1.replace('a','d');//replaces all occurrences of a to e  
+	String replaceString = s1.replace('a','d'); //replaces all occurrences of a to d 
 	System.out.println(replaceString); 
 	
 	//replacing character in this String

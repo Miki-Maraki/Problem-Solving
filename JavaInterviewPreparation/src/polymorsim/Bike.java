@@ -5,27 +5,17 @@ package polymorsim;
 
 public class Bike {
 
-	final void run() {  // final method
+	final void run() {  // final method... can be inherited
 		System.out.println("running...");
 	}
 }
-/*
+
 class Honda2 extends Bike {
 	
 	public static void main(String [] args) {
-		Honda2 h = new Honda2();
-		    h.run();   // running... 
-	}
-	
-public class Singleton{
-	private static final Singleton INSTANCE = new Singleton();
-	
-	private Singleton(){
-	}
-	
-	public static Singleton getInstance(){
-	   return INSTANCE;
+		Honda2 h = new Honda2(); 
+		    h.run();   // running... inherited 
 	}
 }
-*/
+
 

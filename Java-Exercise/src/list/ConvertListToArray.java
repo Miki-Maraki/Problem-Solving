@@ -25,13 +25,13 @@ public class ConvertListToArray {
         System.out.println("Converting Array to ArrayList");  // option 1
         List<String> list2 = new ArrayList<>();  
         list2 =  Arrays.asList(item);  
-        System.out.println(list2);                             // print List
+        System.out.println(list2);   // print List2
         
         List <String> list = new ArrayList <String> ();         // option 2
         for(String l:item) {
         	list.add(l);
         }
-        System.out.println("final list " + list);               // print list 
+        System.out.println("final list " + list); // print list 
     }  
 
 }

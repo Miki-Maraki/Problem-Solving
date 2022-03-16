@@ -15,6 +15,6 @@ public class SumArrayMethod {
 		SumArrayMethod s = new SumArrayMethod();
 		//s.findSum(new int [] {3, 6, 2, 7});
 		
-		System.out.println("sum of array is : " + s.findSum(new int [] {3, 6, 2, 7}));
+		System.out.println("sum of array is : " + s.findSum(new int [] {3, 6, 9, 7}));//25
 	}
 }

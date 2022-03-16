@@ -1,19 +1,21 @@
 package pro6_2NestedClassAndInterface;
 
 // nested interface
-  public interface Showable {  // main interface class 
+  public interface Showable {  // nested main interface 
 	void show();
 
-	interface Message {        // interface class
+	public interface Message {        // interface 
 		void msg();
 	  }
   }
    class TestNestedInterface1 implements Showable.Message {    // nested class
-	   public void msg() {System.out.println("Hello nested interface");}
+	   public void msg() {
+		   System.out.println("Hello nested interface");
+		   }
 
 	public static void main(String args[]) {
-		Showable.Message messg = new TestNestedInterface1(); // up casting here
-		messg.msg();
+		Showable.Message mg = new TestNestedInterface1(); // up casting here
+		mg.msg();
 	}
 }  // end of class
    
@@ -27,7 +29,9 @@ package pro6_2NestedClassAndInterface;
 	   
 	 class TestNestedInterface2 implements Post.Message{  // nested class
 		 
-	  public void msg(){System.out.println("Hello nested interface");}   // method 
+	  public void msg(){
+		  System.out.println("Hello nested interface");
+		  }   // method 
 	   
 	  public static void main(String args[]){  
 	   Post.Message message = new TestNestedInterface2(); //up casting here  

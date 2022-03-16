@@ -18,7 +18,7 @@ public class CustTest {
 		System.out.println("After Sorted " + l);	
 		
 		///Sorting Customer Object Using Comparator Interface
-		List<Customer> lc = new ArrayList<>();
+		List<Customer> lc = new ArrayList<Customer>();
 
 		Customer c1 = new Customer(100, "Nigus", 5000);
 		Customer c2 = new Customer(101, "JJ", 4000);
@@ -33,11 +33,11 @@ public class CustTest {
 		lc.add(c5);
 
 		SortCustomerBySalary ss = new SortCustomerBySalary();   // create object 
-        System.out.println("Before Sorted By Salary : "+lc);
+        System.out.println("Before Sorted By Salary : " + lc);
 		
 		Collections.sort(lc, ss);
 		               // OR
 		//Collections.sort(lc, new Comparator<CustomerOne>() {	
-		System.out.println("After Sorted By Salary : "+lc);
+		System.out.println("After Sorted By Salary : " + lc);
 	}
 }
