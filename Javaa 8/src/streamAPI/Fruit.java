@@ -9,6 +9,14 @@ import java.util.stream.Collectors;
 
 // how can change array to ArrayList : 3 ways 
 public class Fruit {
+	/*
+	 public List<Employee> getAllEmployeeStartsWithB() {
+		List<Employee> employee = employeeRepository.getAllEmployee();
+		List<Employee> employeeStartsWithB = employee.stream().filter(n -> n.getName().startsWith("B"))
+				.collect(Collectors.toList());
+		return employeeStartsWithB;
+	}
+	 */
 	
 	public static void main(String[] args) {
 		String [] arr = {"orange", "apple", "banana", "pineapple", "lemon", "mango", "banana", "berry"};

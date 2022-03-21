@@ -15,7 +15,7 @@ public class Palindrome {
 					isTrue = true;
 				}else {
 					isTrue = false;	
-					//break;
+					break;
 				}
 			}
 		}

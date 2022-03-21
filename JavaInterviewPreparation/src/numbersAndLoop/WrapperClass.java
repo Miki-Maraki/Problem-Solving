@@ -8,9 +8,9 @@ public class WrapperClass {
 		// byte -> short(size 32767) -> char(size 65535) -> int -> long -> float -> double
 		// wrapper class ... convert primitive data types into objects
 		
-		// Autoboxing: Automatic conversion of primitive types to the object
+		// Autoboxing: Automatic conversion of primitive types to the object type
 		char chr = 'a';
-		Character q = chr; // Autoboxing- primitive to Character object conversion
+		Character q = chr; // Autoboxing- primitive to Character (wrapper)object conversion
 		System.out.println(" the value of character q is : " + q); // a
 		ArrayList <Integer> arrayList = new ArrayList <Integer>();
 		arrayList.add(25); // Autoboxing because ArrayList stores only objects
@@ -26,7 +26,7 @@ public class WrapperClass {
 		
 // Unboxing converting an object of a wrapper class to its corresponding primitive type
 		Character hh = 'b';  // wrapper class
-		char w = hh; // unboxing - Character object to primitive conversion
+		char w = hh; // unboxing - Character object to primitive type conversion
 		System.out.println("the value of w is " + w); // b
 		
 		ArrayList <Integer> arrList = new ArrayList<Integer>();

@@ -20,11 +20,11 @@ public class PerfectNumber {
 	}
 
 	public static void main(String[] args) {
-
-		isPerfect(5);// f
-		isPerfect(6);// t 1+2+3 = 6
-		isPerfect(18);// f
-		isPerfect(45);// f
+		isPerfect(5);  // f
+		isPerfect(6);  // t 1+2+3 = 6 ... smallest perfect number
+		isPerfect(28); // t 14 +2 +7+4+1
+		isPerfect(45); // f
+		isPerfect(496);// t
 
 	}
 }

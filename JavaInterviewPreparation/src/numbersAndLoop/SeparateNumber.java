@@ -8,7 +8,7 @@ public class SeparateNumber {
 		int pos = 0, neg = 0, odd = 0, even = 0, zero = 0;
 		for (int i = 0; i < num.length; i++) {
 			if (num[i] > 0) {
-				System.out.print(num[i] + " are Positive numbers");
+				System.out.print(num[i] + "," + " are Positive numbers");
 			} else if (num[i] < 0) {
 				System.out.println(num[i] + " are Negative numbers");
 			} else {
